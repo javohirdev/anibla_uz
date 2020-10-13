@@ -1,0 +1,345 @@
+//COLOR
+
+$defaultColor: #6A2FE3;
+$colorWhite: #ffffff;
+
+.Login{
+    .general{
+        .col-md-6{
+            .box{
+                width: 80%;
+                height: 100%;
+                background-color: #763bf1a1;
+                .logo{
+                    display: flex;
+                    width: 200px;
+                    height: 150px;
+                    align-content: center;
+                    justify-content: center;
+                    padding-top: 1.5rem;
+                    border-radius: 10px;
+                    box-shadow: 0 5px 35px #40404059;
+                    position: absolute;
+                    top: 30%;
+                    left: 20%;
+                    h3{
+                        display: flex;
+                        align-content: center;
+                        justify-content: center;
+                        padding-top: 2rem;
+                        color: $colorWhite;
+                    }
+                }
+            }
+        }
+        .col-md-4{
+            margin: 5rem 3rem;
+            .messageBox{ //login error message
+                border-left: 5px solid red;
+                padding: 0.5rem 1.5rem;
+                border-radius: 5px;
+                font-weight: 600;
+                box-shadow: 0px 5px 5px #b6b6b65c;
+                margin-bottom: 2rem;
+            }
+            form{
+                .form-group{
+                    input{
+                        border: none;
+                        border-left: 5px solid #a983f6;
+                        transition: 0.3s ease;
+                        -webkit-transition: 0.3s ease;
+                        -o-transition: 0.3s ease;
+                        -moz-transition: 0.3s ease;
+                        padding: 2rem 1rem;
+                        &:focus{
+                            outline: none!important;
+                            box-shadow: 0px 5px 5px #b6b6b65c;
+                        }
+                    }
+                }
+                button{
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    padding: 1rem;
+                    margin: 2rem 0;
+                    &:focus{
+                        color: white;
+                        background-color: $defaultColor;
+                    }
+                }
+                .signUp{
+                    margin: 0!important;
+                }
+            }
+        }
+    }
+    .Footer{
+        margin-top: 0!important;
+    }
+}
+
+//RESPONSIVE
+
+@media screen and (max-width: 1200px){
+    //COLOR
+    
+    $defaultColor: #6A2FE3;
+    $colorWhite: #ffffff;
+    
+    .Login{
+            .general{
+                display: flex!important;
+                .col-md-6{
+                    display: block;
+                }
+                .col-md-4{
+                    margin: 8rem 5rem;
+                    form{
+                        button{
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            padding: 0.5rem;
+                            margin: 2rem 0;
+                            background-color: $defaultColor;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media screen and (max-width: 1024px){
+    //COLOR
+    
+    $defaultColor: #6A2FE3;
+    $colorWhite: #ffffff;
+    
+    .Login{
+            .general{
+                display: inline!important;
+                .col-md-6{
+                    display: none;
+                }
+                .col-md-4{
+                    margin: 2rem 20rem;
+                    form{
+                        button{
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            padding: 0.5rem;
+                            margin: 2rem 0;
+                            background-color: $defaultColor;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media screen and (max-width: 768px){
+    //COLOR
+    
+    $defaultColor: #6A2FE3;
+    $colorWhite: #ffffff;
+    
+    .Login{
+            .general{
+                display: inline!important;
+                .col-md-6{
+                    display: none;
+                }
+                .col-md-4{
+                    margin: 2rem 15rem!important;
+                    form{
+                        button{
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            padding: 0.5rem;
+                            margin: 2rem 0;
+                            background-color: $defaultColor;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media screen and (max-width: 700px){
+    //COLOR
+    
+    $defaultColor: #6A2FE3;
+    $colorWhite: #ffffff;
+    
+    .Login{
+            .general{
+                display: inline!important;
+                .col-md-6{
+                    display: none;
+                }
+                .col-md-4{
+                    margin: 2rem 1rem!important;
+                    form{
+                        button{
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            padding: 0.5rem;
+                            margin: 2rem 0;
+                            background-color: $defaultColor;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media screen and (max-width: 501px){
+    //COLOR
+    
+    $defaultColor: #6A2FE3;
+    $colorWhite: #ffffff;
+    
+    .Login{
+            .general{
+                display: inline!important;
+                .col-md-6{
+                    display: none;
+                }
+                .col-md-4{
+                    margin: 2rem 0!important;
+                    form{
+                        button{
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            padding: 0.5rem;
+                            margin: 2rem 0;
+                            background-color: $defaultColor;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media screen and (max-width: 460px){
+    //COLOR
+    
+    $defaultColor: #6A2FE3;
+    $colorWhite: #ffffff;
+    
+    .Login{
+            .general{
+                display: inline!important;
+                .col-md-6{
+                    display: none;
+                }
+                .col-md-4{
+                    margin: 2rem 0;
+                    form{
+                        button{
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            padding: 0.5rem;
+                            margin: 2rem 0;
+                            background-color: $defaultColor;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media screen and (max-width: 400px){
+    //COLOR
+    
+    $defaultColor: #6A2FE3;
+    $colorWhite: #ffffff;
+    
+    .Login{
+            .general{
+                display: inline!important;
+                .col-md-6{
+                    display: none;
+                }
+                .col-md-4{
+                    margin: 2rem 0!important;
+                    form{
+                        button{
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            padding: 0.5rem;
+                            margin: 2rem 0;
+                            background-color: $defaultColor;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media screen and (max-width: 370px){
+    //COLOR
+    
+    $defaultColor: #6A2FE3;
+    $colorWhite: #ffffff;
+    
+    .Login{
+            .general{
+                display: inline!important;
+                .col-md-6{
+                    display: none;
+                }
+                .col-md-4{
+                    margin: 2rem 0;
+                    form{
+                        button{
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            padding: 0.5rem;
+                            margin: 2rem 0;
+                            background-color: $defaultColor;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media (min-width: 315px) and (max-width: 330px){
+//COLOR
+
+$defaultColor: #6A2FE3;
+$colorWhite: #ffffff;
+
+    .Login{
+        .general{
+            display: inline!important;
+            .col-md-6{
+                display: none;
+            }
+            .col-md-4{
+                margin: 2rem 0;
+                form{
+                    button{
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        padding: 0.5rem;
+                        margin: 2rem 0;
+                        background-color: $defaultColor;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

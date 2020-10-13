@@ -1,0 +1,70 @@
+//COLOR
+
+$defaultColor: #6A2FE3;
+$colorWhite: #ffffff;
+
+
+.YangiDunyo{
+    .main{
+        .col-md-4{
+            margin: 2rem 4rem;
+            .filmInfos{
+                ul{
+                    margin: 2rem -2.5rem;
+                }
+            }
+        }
+        .col-md-8{
+            margin: 2rem -9rem;
+            .smallInfo{
+                a{
+                    color: #ffffff;
+                    background-color: #7741e5;
+                    padding: 1rem;
+                    border-radius: 50px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .container{
+        .downloadAllSeries{
+            margin: 3rem 25.5rem;
+            a{
+                color: #ffffff;
+                background-color: #7741e5;
+                padding: 1rem;
+                border-radius: 50px;
+                text-decoration: none;
+            }
+        }
+        .form{
+            .form-group{
+                input, textarea{
+                    border: none;
+                    border-left: 5px solid #a983f6;
+                    transition: 0.3s ease;
+                    -webkit-transition: 0.3s ease;
+                    -o-transition: 0.3s ease;
+                    -moz-transition: 0.3s ease;
+                    padding: 2rem 1rem;
+                    &:focus{
+                        outline: none!important;
+                        box-shadow: 0px 5px 5px #b6b6b65c;
+                    }
+                }
+            }
+            button{
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 1rem;
+                margin: 2rem 0;
+                &:focus{
+                    color: white;
+                    background-color: $defaultColor;
+                }
+            }
+        }
+    }
+}

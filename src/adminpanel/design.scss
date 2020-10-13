@@ -1,0 +1,108 @@
+/**COLORS**/
+
+$colorBlack: #000000;
+$colorWhite: #ffffff;
+
+
+.TopSide{
+        .menu{
+            background-color: $colorBlack;
+            .main{
+                div{ //Sidebar
+                    .general{
+                        .admin-brand{ //Sidebar logo
+                            font-size: 2rem;
+                            text-decoration: none;
+                            color: rgb(40 40 40 / 82%);
+                            font-weight: 700;
+                            display: flex;
+                            justify-content: center;
+                            text-decoration: none;
+                        }
+                        ul{ //Sidebar links
+                            margin: 2rem 0;
+                            li{
+                                font-size: 1.3rem;
+                                margin: 10px;
+                                list-style-type: none;
+                            }
+                        }
+                    }
+                    svg{
+                        font-size: 2rem;
+                        margin-top: 1rem;
+                        color: $colorWhite;
+                    }
+                }
+                .account{
+                    .btn-group{
+                        button{
+                            margin: 1rem 0 1rem;
+                            background-color: transparent;
+                            border: none;
+                        }
+                        .dropdown-menu{
+                            min-width: 0;
+                        }
+                    }
+                }
+            }
+        }
+}
+.ContentBack{
+    height: 600px;
+    background-color: $colorBlack;
+}
+.Content{
+    .InfoCard{
+        .container{
+            .row{
+                .col-md-4{
+                    margin: 3rem 0;
+                    .card{
+                        .card-header{
+                            display: flex;
+                            justify-content: space-between;
+                            .icon{
+                                background-color: #ff0000b8;
+                                color: #ffffff;
+                                width: 50px;
+                                height: 50px;
+                                text-align: center;
+                                line-height: 50px;
+                                font-size: 1.3rem;
+                                border-radius: 50px;
+                            }
+                            .info{
+                                span{
+                                    color: gray;
+                                }
+                                p{
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        .card{
+                            .card-header{
+                                .icon{
+                                    background-color: rgb(14, 95, 14);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        .card{
+                            .card-header{
+                                .icon{
+                                    background-color: rgb(29, 63, 136);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

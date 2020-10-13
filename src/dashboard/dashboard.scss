@@ -1,0 +1,791 @@
+body.light-mode {
+    background-color: #C3D0F1;
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+}
+body.dark-mode {
+    background-color: #1a1919;
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+}
+.DarkModeToggle{
+    display: flex;
+    margin: 0.7rem;
+}
+
+.body{
+    overflow-x: hidden!important;
+}
+.top{
+    background-color: #7aa2f8;
+    width: 100%;
+    padding: 0.5rem;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+.profile{
+    .container{
+        .row{
+            .main{
+                .generalSection{
+                    .profile{
+                        .dropdown{
+                            button{
+                                width: 10%;
+                                background-color: transparent;
+                                border: none;
+                                &:focus{
+                                    outline: none!important;
+                                    box-shadow: none!important;
+                                }
+                            }
+                        }
+                        .dropdown.show{
+                            display: contents;
+                        }
+                    }
+                    .sections{
+                        a{
+                            svg{
+                                font-size: 1.5rem;
+                                margin: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mainDashboard{
+    .cardsDashboard{
+        padding: 0;
+        .col-md-4{
+            margin: 2rem -5rem;
+            .user_profile{
+                background-color: #ffffff;
+                width: 75%;
+                border-radius: 15px 15px 15px 0;
+                padding: 1.5rem;
+                .profileIdBalance{
+                    .editProfile{
+                        background-color: #7B85F9;
+                        color: #ffffff;
+                        text-decoration: none;
+                        border-radius: 10px 0;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+            &:nth-child(2){ //second col-md-4
+                margin: 2rem 0;
+                .sendFeedback{
+                    .form{
+                        button{
+                            height: 100%;
+                            margin: 0 1rem;
+                            border: none;
+                            padding: 0.4rem;
+                            &:focus{
+                                border: none!important;
+                                outline: none!important;
+                            }
+                        }
+                    }
+                }
+                .messages{
+                    background-color: #ffffff;
+                    height: 385px;
+                    overflow: scroll;
+                    .box{
+                        border-bottom: 1px solid #80808066;
+                        .boxHeader{
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                margin: 2.5rem 0;
+                .followChannels{
+                    background-color: #ffffff;
+                    overflow: scroll;
+                    height: 435px;
+                    .channels{
+                        .channelsHeader{
+                            a{
+                                margin-left: 8rem;
+                                background-color: #7764E4;
+                                padding: 0.5rem;
+                                color: #ffffff;
+                                height: 50%;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col{
+            margin: 2.5rem 0;
+            .myFavorites{
+                width: 150%;
+                background-color: #ffffff;
+                height: 435px;
+                overflow: scroll;
+            }
+        }
+    }
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 768px){
+    .top{
+        .profile{
+            .container{
+                .row{
+                    .main{
+                        .generalSection{
+                            display: flex!important;
+                            .profile{
+                                margin: 0.5rem 2rem;
+                                .dropdown{
+                                    button{
+                                        width: 40%;
+                                    }
+                                }
+                            }
+                            .sections{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainDashboard{
+        .cardsDashboard{
+            display: inline!important;
+            .col-md-4{
+                margin: 2rem 11rem;
+                .user_profile{
+                    width: 50%;
+                }
+                &:nth-child(2){ //second col-md-4
+                    margin: 2rem 5.5rem;
+                    .sendFeedback{
+                        .form{
+                            margin: 0 8rem;
+                            button{
+                                height: 100%;
+                                margin: 0 1rem;
+                                border: none;
+                                padding: 0.4rem;
+                                &:focus{
+                                    border: none!important;
+                                    outline: none!important;
+                                }
+                            }
+                        }
+                    }
+                    .messages{
+                        border-radius: 5px;
+                        width: 500px;
+                    }
+                }
+                &:nth-child(3){
+                    margin: 2.5rem 6rem;
+                    .followChannels{
+                        width: 500px;
+                        .channels{
+                            .channelsHeader{
+                                img{
+                                    width: 10%!important;
+                                }
+                                a{
+                                    margin-left: 18rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col{
+                margin: 2.5rem 6rem;
+                .myFavorites{
+                    width: 73%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .top{
+        .profile{
+            .container{
+                .row{
+                    .main{
+                        .generalSection{
+                            display: flex!important;
+                            .profile{
+                                margin: 0.5rem 2rem;
+                                .dropdown{
+                                    button{
+                                        width: 40%;
+                                    }
+                                }
+                            }
+                            .sections{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainDashboard{
+        .cardsDashboard{
+            display: inline!important;
+            .col-md-4{
+                margin: 2rem 10rem;
+                .user_profile{
+                    width: 50%;
+                }
+                &:nth-child(2){ //second col-md-4
+                    margin: 2rem 3rem;
+                    .sendFeedback{
+                        .form{
+                            margin: 0 8rem;
+                            button{
+                                height: 100%;
+                                margin: 0 1rem;
+                                border: none;
+                                padding: 0.4rem;
+                                &:focus{
+                                    border: none!important;
+                                    outline: none!important;
+                                }
+                            }
+                        }
+                    }
+                    .messages{
+                        border-radius: 5px;
+                        width: 500px;
+                    }
+                }
+                &:nth-child(3){
+                    margin: 2.5rem 3.3rem;
+                    .followChannels{
+                        width: 500px;
+                        .channels{
+                            .channelsHeader{
+                                img{
+                                    width: 10%!important;
+                                }
+                                a{
+                                    margin-left: 18rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col{
+                margin: 2.5rem 3.3rem;
+                .myFavorites{
+                    width: 83%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px){
+    .top{
+        .profile{
+            .container{
+                .row{
+                    .main{
+                        .generalSection{
+                            display: inline!important;
+                            .profile{
+                                margin: 0 10rem;
+                                .dropdown{
+                                    button{
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                            .sections{
+                                margin: 0 7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainDashboard{
+        .cardsDashboard{
+            display: inline!important;
+            .col-md-4{
+                margin: 2rem 6rem;
+                .user_profile{
+                    width: 65%;
+                }
+                &:nth-child(2){ //second col-md-4
+                    margin: 2rem 0;
+                    .sendFeedback{
+                        .form{
+                            margin: 0 8rem;
+                            button{
+                                height: 100%;
+                                margin: 0 1rem;
+                                border: none;
+                                padding: 0.4rem;
+                                &:focus{
+                                    border: none!important;
+                                    outline: none!important;
+                                }
+                            }
+                        }
+                    }
+                    .messages{
+                        width: 480px;
+                        border-radius: 5px;
+                    }
+                }
+                &:nth-child(3){
+                    margin: 0!important;
+                    .followChannels{
+                        .channels{
+                            .channelsHeader{
+                                img{
+                                    width: 15%!important;
+                                }
+                                a{
+                                    margin-left: 16rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col{
+                margin: 1rem 0!important;
+                .myFavorites{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 501px){
+    .top{
+        .profile{
+            .container{
+                .row{
+                    .main{
+                        .generalSection{
+                            display: inline!important;
+                            .profile{
+                                margin: 0 10rem;
+                                .dropdown{
+                                    button{
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                            .sections{
+                                margin: 0 7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainDashboard{
+        .cardsDashboard{
+            display: inline!important;
+            .col-md-4{
+                margin: 2rem 2.5rem;
+                .user_profile{
+                    width: 80%;
+                }
+                &:nth-child(2){ //second col-md-4
+                    margin: 2rem 0;
+                    .sendFeedback{
+                        .form{
+                            margin: 0 5rem;
+                            button{
+                                height: 100%;
+                                margin: 0 1rem;
+                                border: none;
+                                padding: 0.4rem;
+                                &:focus{
+                                    border: none!important;
+                                    outline: none!important;
+                                }
+                            }
+                        }
+                    }
+                    .messages{
+                        width: 440px;
+                        border-radius: 5px;
+                    }
+                }
+                &:nth-child(3){
+                    margin: 0!important;
+                    .followChannels{
+                        .channels{
+                            .channelsHeader{
+                                img{
+                                    width: 15%!important;
+                                }
+                                a{
+                                    margin-left: 14rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col{
+                margin: 1rem 0!important;
+                .myFavorites{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 460px){
+    .top{
+        .profile{
+            .container{
+                .row{
+                    .main{
+                        .generalSection{
+                            display: inline!important;
+                            .profile{
+                                margin: 0 8rem;
+                                .dropdown{
+                                    button{
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                            .sections{
+                                margin: 0 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainDashboard{
+        .cardsDashboard{
+            display: inline!important;
+            .col-md-4{
+                margin: 2rem 2.5rem;
+                .user_profile{
+                    width: 80%;
+                }
+                &:nth-child(2){ //second col-md-4
+                    margin: 2rem 0;
+                    .sendFeedback{
+                        .form{
+                            margin: 0 3rem;
+                            button{
+                                height: 100%;
+                                margin: 0 1rem;
+                                border: none;
+                                padding: 0.4rem;
+                                &:focus{
+                                    border: none!important;
+                                    outline: none!important;
+                                }
+                            }
+                        }
+                    }
+                    .messages{
+                        width: 370px;
+                        border-radius: 5px;
+                    }
+                }
+                &:nth-child(3){
+                    margin: 0!important;
+                    .followChannels{
+                        .channels{
+                            .channelsHeader{
+                                img{
+                                    width: 15%!important;
+                                }
+                                a{
+                                    margin-left: 10rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col{
+                margin: 1rem 0!important;
+                .myFavorites{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    .top{
+        .profile{
+            .container{
+                .row{
+                    .main{
+                        .generalSection{
+                            display: inline!important;
+                            .profile{
+                                margin: 0 6rem;
+                                .dropdown{
+                                    button{
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                            .sections{
+                                margin: 0 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainDashboard{
+        .cardsDashboard{
+            display: inline!important;
+            .col-md-4{
+                margin: 2rem 2.5rem;
+                .user_profile{
+                    width: 75%;
+                }
+                &:nth-child(2){ //second col-md-4
+                    margin: 2rem 0;
+                    .sendFeedback{
+                        .form{
+                            margin: 0 3rem;
+                            button{
+                                height: 100%;
+                                margin: 0 1rem;
+                                border: none;
+                                padding: 0.4rem;
+                                &:focus{
+                                    border: none!important;
+                                    outline: none!important;
+                                }
+                            }
+                        }
+                    }
+                    .messages{
+                        width: 340px;
+                        border-radius: 5px;
+                    }
+                }
+                &:nth-child(3){
+                    margin: 0!important;
+                    .followChannels{
+                        .channels{
+                            .channelsHeader{
+                                img{
+                                    width: 15%!important;
+                                }
+                                a{
+                                    margin-left: 9rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col{
+                margin: 1rem 0!important;
+                .myFavorites{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 370px){
+    .top{
+        .profile{
+            .container{
+                .row{
+                    .main{
+                        .generalSection{
+                            display: inline!important;
+                            .profile{
+                                margin: 0 6rem;
+                                .dropdown{
+                                    button{
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                            .sections{
+                                margin: 0 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainDashboard{
+        .cardsDashboard{
+            display: inline!important;
+            .col-md-4{
+                margin: 2rem 2.5rem;
+                .user_profile{
+                    width: 75%;
+                }
+                &:nth-child(2){ //second col-md-4
+                    margin: 2rem 0;
+                    .sendFeedback{
+                        .form{
+                            margin: 0 3rem;
+                            button{
+                                height: 100%;
+                                margin: 0 1rem;
+                                border: none;
+                                padding: 0.4rem;
+                                &:focus{
+                                    border: none!important;
+                                    outline: none!important;
+                                }
+                            }
+                        }
+                    }
+                    .messages{
+                        width: 320px;
+                        border-radius: 5px;
+                    }
+                }
+                &:nth-child(3){
+                    margin: 0!important;
+                    .followChannels{
+                        .channels{
+                            .channelsHeader{
+                                img{
+                                    width: 15%!important;
+                                }
+                                a{
+                                    margin-left: 8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col{
+                margin: 1rem 0!important;
+                .myFavorites{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 315px) and (max-width: 330px){
+    .top{
+        .profile{
+            .container{
+                .row{
+                    .main{
+                        .generalSection{
+                            display: inline!important;
+                            .profile{
+                                margin: 0 6rem;
+                                .dropdown{
+                                    button{
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                            .sections{
+                                margin: 0 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainDashboard{
+        .cardsDashboard{
+            display: inline!important;
+            .col-md-4{
+                margin: 2rem 2.5rem;
+                .user_profile{
+                    width: 75%;
+                }
+                &:nth-child(2){ //second col-md-4
+                    margin: 2rem 0;
+                    .sendFeedback{
+                        .form{
+                            margin: 0 0.5rem;
+                            button{
+                                height: 100%;
+                                margin: 0 1rem;
+                                border: none;
+                                padding: 0.4rem;
+                                &:focus{
+                                    border: none!important;
+                                    outline: none!important;
+                                }
+                            }
+                        }
+                    }
+                    .messages{
+                        width: 280px;
+                        border-radius: 5px;
+                    }
+                }
+                &:nth-child(3){
+                    margin: 0!important;
+                    .followChannels{
+                        .channels{
+                            .channelsHeader{
+                                img{
+                                    width: 15%!important;
+                                }
+                                a{
+                                    margin-left: 6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col{
+                margin: 1rem 0!important;
+                .myFavorites{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
